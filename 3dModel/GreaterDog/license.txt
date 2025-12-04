@@ -1,0 +1,11 @@
+Model Information:
+* title:	Undertale - Greater Dog
+* source:	https://sketchfab.com/3d-models/undertale-greater-dog-ded84d6315b94df4a0c2f8abbd89aa0b
+* author:	Colamäleon (https://sketchfab.com/colamaeleon)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Undertale - Greater Dog" (https://sketchfab.com/3d-models/undertale-greater-dog-ded84d6315b94df4a0c2f8abbd89aa0b) by Colamäleon (https://sketchfab.com/colamaeleon) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
