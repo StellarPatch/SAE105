@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site SAE105</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="blueFlame" id="flame1"><img src="img/deltarune-flame-beacon.gif" alt=""></div>
+
+    <div id="stats">
+
+    </div>
+
+    <section>
+        <div id="return" onclick="Return()">RETURN</div>
+    </section>
+
+    <main id="SAELayer">
+        <div id="flexTitle">
+            <h2 id="titreSAE">TitreSAE</h2>
+            <h3 id="sousTitreSAE">Sous-Titre</h3>
+        </div>
+
+        <footer>
+            <div id="summon" onclick="summon()">PROCEED</div>
+            <div id="ERASE" onclick="ERASE()">ERASE</div>
+        </footer>
+
+    </main>
+
+    <div id="Transition"></div>
+
+    <div class="fountain" id="fountain1"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain2"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain3"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain4"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain5"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain6"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+    <div class="fountain" id="fountain7"><img src="img/Dark-Fountain-overworld-projec-unscreen.gif" alt=""></div>
+
+    <div id="container3D">
+        <model-viewer id="knight" src="3dModel/deltarune_-_the_roaring_knight_-_edit.glb">
+        </model-viewer>
+    </div>
+    <div id="knightText">
+        Je suis le <b>Roaring Knight</b><br>
+        souhaites-tu procéder ?
+    </div>
+
+    <div id="loading">
+        <img src="img/duck.gif" alt="duck">
+    </div>
+
+    <audio id="blast" src="sfx/asriel-blaster.mp3"></audio>
+    <audio id="introSFX" src="sfx/mus_cymbal.ogg"></audio>
+
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="js/dataSAE.js"></script>
+    <script src="js/scriptSAE.js"></script>
+</body>
+
+</html>

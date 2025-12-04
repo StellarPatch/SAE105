@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site SAE105</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main id="principal">
+
+        <h1>Carnet de bord de<br>William Lin</h1>
+
+        <div id="GeoStar">
+            <img src="img/GeoStar.png" alt="">
+        </div>
+
+        <div id="flexSAE">
+            <div class="RowSAE">
+                <div class="SAE" onclick="SAEClick('SAE1.01')">SAE1.01</div>
+                <div class="SAE" onclick="SAEClick('SAE1.02')">SAE1.02</div>
+                <div class="SAE" onclick="SAEClick('SAE1.03')">SAE1.03</div>
+            </div>
+            <div class="RowSAE">
+                <div class="SAE" onclick="SAEClick('SAE1.04')">SAE1.04</div>
+                <div class="SAE" onclick="SAEClick('SAE1.05')">SAE1.05</div>
+                <div class="SAE" onclick="SAEClick('SAE1.06')">SAE1.06</div>
+            </div>
+        </div>
+
+        <footer>
+            <select name="Audio" id="Audio" onchange="audio()">
+                <option value="false">None Music</option>
+            </select>
+
+            <select name="Semestre" id="Semestre" onchange="switchSemester()">
+                <option value="S1">SEMESTRE 1</option>
+                <option value="S2">SEMESTRE 2</option>
+                <option value="S3">SEMESTRE 3</option>
+                <option value="S4">SEMESTRE 4</option>
+                <option value="S5">SEMESTRE 5</option>
+                <option value="S6">SEMESTRE 6</option>
+            </select>
+        </footer>
+    </main>
+
+    <div id="annoying-dog-undertale">
+        <img src="img/annoying-dog-undertale.gif" alt="annoying-dog-undertale">
+        <audio id="dogSFX" src="sfx/snd_catsalad.wav"></audio>
+    </div>
+
+    <div id="ListeAudio">
+        <audio id="audio0" src="sfx/Music/Its_Raining_Somewhere_Else-Toby_Fox.mp3"></audio>
+    </div>
+
+    <script src="js/dataSAE.js"></script>
+    <script src="js/scriptMain.js"></script>
+</body>
+
+</html>
