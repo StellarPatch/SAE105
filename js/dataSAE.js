@@ -1,5 +1,3 @@
-var currentSAE_page = "";
-
 const SAE_Data = {
   "SAE1.01": {
     "titre": "Auditer une communication numerique",

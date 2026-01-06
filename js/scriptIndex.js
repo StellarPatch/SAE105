@@ -1,3 +1,23 @@
+// Initialisation de l'arrivé sur le site
+
+function login() {
+    let intro = document.getElementById("intro");
+    setTimeout(() => { intro.classList.add("inactive"); StartupAudio() }, 2000);
+    setTimeout(() => { intro.classList.add("out") }, 4000);
+}
+
+// Audio de démarrage
+
+function StartupAudio() {
+    let a = document.getElementById("sfxStartup");
+    a.currentTime = 0;
+    a.volume = 1;
+    a.loop = false;
+    a.play()
+}
+
+// Liste effet d'animation corruption
+
 function XEvent() {
     CorruptionAudio();
     setTimeout(() => {
@@ -63,7 +83,7 @@ function Corruption() {
     setTimeout(() => {
         document.querySelector("#error").classList.add("active")
         let subWindow = document.getElementById("error");
-        subWindow.innerHTML = '<header><div>System</div><div>X</div></header><div class="insideBox"><div>Fixing</div></div>';
+        subWindow.innerHTML = '<header><div>System</div><div>X</div></header><div class="insideBox"><div>Redirecting</div></div>';
         setTimeout(() => {
             window.location.href = "Main.html";
         }, 2000)
@@ -77,3 +97,4 @@ function CorruptionAudio() {
     a.loop = false;
     a.play()
 }
+

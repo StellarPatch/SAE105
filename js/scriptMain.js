@@ -7,6 +7,8 @@ const SAE = document.getElementById('flexSAE');
 const dog = document.getElementById("annoying-dog-undertale");
 const transition = document.getElementById("Transition");
 
+const tpSound = document.getElementById("teleport")
+
 var S1 = ["SAE1.01", "SAE1.02", "SAE1.03", "SAE1.04", "SAE1.05", "SAE1.06"];
 var S2 = ["SAE2.01", "SAE2.02", "SAE2.03", "SAE2.04"];
 var S3 = ["SAE3.01", "SAE3.02", "SAE3.03", "STAGE CREA. NUM.", "Portefolio"];
@@ -127,9 +129,20 @@ function getSemesterData(Name) {
     }
 }
 
+function home() {
+    tpSound.volume = 1;
+    tpSound.loop = false;
+    tpSound.play();
+
+    setTimeout(()=>{principal.classList.add("out")},250)
+    setTimeout(()=>{principal.classList.remove("out")},750)
+
+    setTimeout(()=>{window.location.href = "index.html"},1500)
+    
+}
+
 function SAEClick(X) {
-    currentSAE_page = X ;
-    window.open("SAE.html?msg="+encodeURIComponent(currentSAE_page), "_blank")
+    window.open("SAE.html?msg="+X, "_blank")
 }
 
 function TransitionAnimation() {

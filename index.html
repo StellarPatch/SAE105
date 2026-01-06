@@ -9,12 +9,13 @@
 </head>
 
 <body>
-
+<!--------------------------------------- BUREAU ----------------------------------------->
     <div class="logoWindows">
         <img src="img/LogoWindows2012.webp" alt="Windows_logo2012">
     </div>
 
     <div class="bureau">
+        <!-------------------- COLONNE 1 -------------------->
         <div>
             <div onclick="XEvent()" class="application">
                 <img class="application" src="img/LogoApplication/PC.png" alt="PC">
@@ -30,6 +31,8 @@
             </div>
         </div>
 
+         <!-------------------- COLONNE 2 -------------------->
+
         <div>
             <div onclick="XEvent()" class="application">
                 <img src="img/LogoApplication/CorbeilleVide.png" alt="CorbeilleVide">
@@ -42,9 +45,11 @@
         </div>
     </div>
 
+     <!-------------------- BARRE DES TACHES -------------------->
+
     <footer>
         <img onclick="XEvent()" src="img/LogoApplication/WindowsIcon.png" alt="">
-        <input type="search" name="search" id="" placeholder="  Search">
+        <input type="search" name="search" id="" placeholder="  Search" oninput="XEvent()">
         <img onclick="XEvent()" src="img/LogoApplication/Fichier.png" alt="">
         <img onclick="XEvent()" src="img/LogoApplication/CMD.png" alt="">
         <img onclick="XEvent()" src="img/LogoApplication/Contact.png" alt="">
@@ -52,17 +57,34 @@
         <img onclick="XEvent()" src="img/LogoApplication/Minecraft.png" alt="">
     </footer>
 
+     <!-------------------- FENETRE POP-UP -------------------->
+
     <section id="error">
         <header>
         <div>Erreur</div>
         <div>X</div>
         </header>
         <div class="insideBox">
-            <div>:(</div>
+            <div> :(</div>
         </div>
     </section>
 
+<!--------------------------------------- LOGIN ----------------------------------------->
+
+    <section id="intro">
+        <div id="heure">24:00</div>
+        <div id="date">Mercredi 07 janvier</div>
+        <img id="loader" src="img/css-loader.gif" alt="loader">
+
+        <div id="loginBtn" onclick="login()">
+            Login
+        </div>
+    </section>
+
+<!--------------------------------------- AUDIO ----------------------------------------->
+
     <audio id="sfxError" src="sfx/windows-10-error-sound.mp3"></audio>
+    <audio id="sfxStartup" src="sfx/windows-11-startup-sound-effect.mp3"></audio>
 
     <script src="js/scriptIndex.js"></script>
 </body>
